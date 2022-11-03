@@ -1,0 +1,9 @@
+	yacc -o foo.c foo.y
+        gcc -g -c foo.o foo.c
+    yacc -o goo.c goo.y
+        gcc -g -c goo.o goo.c
+    yacc -o moo.c moo.y
+        gcc -g -c moo.o moo.c
+    yacc -o loo.c loo.y
+        gcc -g -c loo.o loo.c
+    gcc -g -c foo.o goo.o moo.o loo.o -o final
